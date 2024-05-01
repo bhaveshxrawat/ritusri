@@ -1,0 +1,44 @@
+---
+import { ViewTransitions } from "astro:transitions";
+import { SEO } from "astro-seo";
+
+interface Props {
+  seoTitle: string,
+  seoDescription: string,
+  ogImage?: string,
+}
+
+const { seoTitle, seoDescription, ogImage } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <SEO
+      title={seoTitle}
+      description={seoDescription}
+      openGraph={{
+        basic: {
+          title: `${seoTitle}`,
+          type: "website",
+          image: `${ogImage}`,
+		  url: `${Astro.url}`,
+        },
+      }}
+      extend={{
+        // extending the default link tags
+        link: [{ rel: "icon", href: "/favicon.png" }],
+        // extending the default meta tags
+        meta: [
+          { name: "twitter:image", content: `${ogImage}` },
+          { name: "twitter:title", content: `${seoTitle}` },
+          { name: "twitter:description", content: `${seoDescription}` },
+        ],
+      }}
+    />
+    <ViewTransitions />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
