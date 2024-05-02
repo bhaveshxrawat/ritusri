@@ -1,9 +1,29 @@
 ---
+import {HeroVideo} from "@components/HeroVideo";
+import projects from "./_projects.json"
 import Layout from "@layouts/Layout.astro";
+import { ProjectCard } from "@components/ProjectCard";
 const title = "Ritusri Halambi | Portfolio";
 const description = "Hello, I'm Ritusri Halambi from Mumbai, studying Visual Communication Design at UID, Gandhinagar. If you're looking forward to hire someone who is full of zest and enthusiasm, you're on the right link :)Hello, I'm Ritusri Halambi from Mumbai, studying Visual Communication Design at UID, Gandhinagar. If you're looking forward to hire someone who is full of zest and enthusiasm, you're on the right link :)"
 ---
 
 <Layout seoTitle={title} seoDescription={description}>
-	<h1 class="font-bold">Hello</h1>
+	<main>
+		<section id="hero">
+			<div class="max-w-[970px] mx-auto py-7 pt-2">
+				<HeroVideo client:load />
+			</div>
+		</section>
+		<section>
+			<div class="py-7 px-3">
+				<ul class="max-w-[970px] gap-x-12 gap-y-14 mx-auto grid list-none grid-cols-2 md:grid-cols-[repeat(auto-fit,minmax(300px,1fr))]">
+					{
+						projects.map((project) => (
+							<ProjectCard link={project.link} name={project.name} skills={project.skills} cover={project.cover}/>
+						))
+					}
+				</ul>
+			</div>
+		</section>
+	</main>
 </Layout>

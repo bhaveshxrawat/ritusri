@@ -1,0 +1,50 @@
+[
+    {
+        "name": "National Park, Mumbai",
+        "skills": "UI & UX",
+        "cover": "/projects/national-park.webp",
+        "link": "https://www.ritusrihalambi.com/ui-ux-for-a-national-park"
+    },
+    {
+        "name": "Donut Drip",
+        "skills": "Branding & Packaging",
+        "cover": "/projects/donut-drip.webp",
+        "link": "https://www.ritusrihalambi.com/ui-ux-for-a-national-park"
+    },
+    {
+        "name": "Music Inspired Card Game",
+        "skills": "Design for Playing Cards",
+        "cover": "/projects/card-game.webp",
+        "link": "https://www.ritusrihalambi.com/ui-ux-for-a-national-park"
+    },
+    {
+        "name": "Availability of Basic Sanitation",
+        "skills": "Design for Social Responsibility",
+        "cover": "/projects/basic-sanitation.webp",
+        "link": "https://www.ritusrihalambi.com/ui-ux-for-a-national-park"
+    },
+    {
+        "name": "Brahmani Local Cafe",
+        "skills": "Visual Identity & Branding",
+        "cover": "/projects/brahmani.webp",
+        "link": "https://www.ritusrihalambi.com/ui-ux-for-a-national-park"
+    },
+    {
+        "name": "Vegan Protein Powder",
+        "skills": "Brand Guide",
+        "cover": "/projects/protein-powder.webp",
+        "link": "https://www.ritusrihalambi.com/ui-ux-for-a-national-park"
+    },
+    {
+        "name": "Gender Wage Gap",
+        "skills": "Social Awareness & Branding",
+        "cover": "/projects/wage-gap.webp",
+        "link": "https://www.ritusrihalambi.com/ui-ux-for-a-national-park"
+    },
+    {
+        "name": "Charlie & the Chocolate Factory",
+        "skills": "Book Cover Redesign",
+        "cover": "/projects/choco-factory.webp",
+        "link": "https://www.ritusrihalambi.com/ui-ux-for-a-national-park"
+    }
+]
