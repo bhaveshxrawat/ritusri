@@ -16,7 +16,7 @@ export const HeroVideo = () => {
         muted={isMute}
         loop
         preload="metadata"
-        poster="/intro-poster.png"
+        poster="/intro-poster.webp"
         className="w-full object-cover object-center aspect-[16/8]"
       >
         <source src="/intro-video.webm" type="video/webm" />
